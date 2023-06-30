@@ -1,0 +1,27 @@
+class User <<entity>> {
+  +register(): void
+  +login(): void
+  +logout(): void
+}
+
+class Cart <<entity>> {
+  +add(): void
+  +remove(): void
+  +checkout(): void
+}
+
+class Order <<ValueObject>> {
+  +place(): void
+  +cancel(): void
+  +pay(): void
+}
+
+User "1" -- "1" Cart
+Cart "0..*" -- "1" Order
+
+skinparam class {
+  BackgroundColor yellow
+  ArrowColor Yellow
+  BorderColor OrangeRed
+  stereotypeCBackgroundColor OrangeRed
+}
