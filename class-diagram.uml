@@ -1,19 +1,19 @@
 class User <<entity>> {
-  +register(): void
-  +login(): void
-  +logout(): void
+  +register(): 
+  +login(): 
+  +logout(): 
 }
 
 class Cart <<entity>> {
-  +add(): void
-  +remove(): void
-  +checkout(): void
+  +add():
+  +remove(): 
+  +checkout(): 
 }
 
 class Order <<ValueObject>> {
-  +place(): void
-  +cancel(): void
-  +pay(): void
+  +place(): 
+  +cancel(): 
+  +pay(): 
 }
 
 User "1" -- "1" Cart
