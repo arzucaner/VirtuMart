@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
     })
     .catch((error) => {
         console.error('Database connection error:', error);
-        process.exit(1); // Exit the application if unable to connect to the database
+        process.exit(1); 
     });
 
 app.use(bodyParser.json());
