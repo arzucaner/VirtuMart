@@ -6,10 +6,14 @@ require('dotenv').config();
 
 const app = express();
 
-const myMiddleware = (req, res, next) => {
-    console.log('This is my custom middleware!');
+const loggingMixin = {
+  logRequest(req, res, next) {
+    console.log(`Received ${req.method} request at ${req.url}`);
     next();
+  },
 };
+
+Object.assign(app, loggingMixin);
 
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
@@ -17,11 +21,10 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
     })
     .catch((error) => {
         console.error('Database connection error:', error);
-        process.exit(1);
+        process.exit(1); // Exit the application if unable to connect to the database
     });
 
 app.use(bodyParser.json());
-app.use(myMiddleware);
 
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/products', require('./routes/productRoutes'));
