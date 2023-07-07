@@ -161,6 +161,7 @@ body {
 
 h2 {
   text-align: center;
+  font-family: 'Unbounded', sans-serif;
 }
 
 .container {
@@ -184,15 +185,18 @@ h2 {
 .product h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
+  font-family: 'Unbounded', sans-serif; 
 }
 
 .product p {
   margin-bottom: 10px;
+  font-family: 'Unbounded', sans-serif;
 }
 
 .product span {
   font-weight: bold;
   font-size: 1.2em;
+  font-family: 'Unbounded', sans-serif;
 }
 
 .product button {
@@ -205,10 +209,12 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'Unbounded', sans-serif;
 }
 
 .product button:hover {
   background-color: #555;
+  font-family: 'Unbounded', sans-serif;
 }
 
 .cart-container {
@@ -232,6 +238,7 @@ h2 {
 
 .cart-item p {
   margin-bottom: 10px;
+  font-family: 'Unbounded', sans-serif;
 }
 
 .cart-item span {
@@ -249,6 +256,7 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'Unbounded', sans-serif;
 }
 
 .cart-item button:hover {
@@ -257,6 +265,7 @@ h2 {
 
 .orders-container {
   margin-top: 20px;
+  font-family: 'Unbounded', sans-serif;
 }
 
 .order {
@@ -269,15 +278,18 @@ h2 {
 .order h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
+  font-family: 'Unbounded', sans-serif;
 }
 
 .order p {
   margin-bottom: 5px;
+  font-family: 'Unbounded', sans-serif;
 }
 
 .order ul {
   margin-top: 10px;
   padding-left: 20px;
+  font-family: 'Unbounded', sans-serif;
 }
 
 footer {
