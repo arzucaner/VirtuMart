@@ -3,6 +3,7 @@
 Welcome to VirtuMart, a professional and customizable graphic design templates e-commerce website. With VirtuMart, you can create your projects quickly and impressively using our comprehensive collection of high-quality design templates for customizable posters, brochures, logos, and more.
 
 ## Table of Contents
+- [Project Brief](#project-brief)
 - [Description](#description)
 - [Getting Started](#getting-started)
 - [Technologies](#technologies)
@@ -13,6 +14,10 @@ Welcome to VirtuMart, a professional and customizable graphic design templates e
 - [Contributing](#contributing)
 - [License](#license)
 - [UML Diagram](#umldiagram)
+
+
+## Project Brief
+[VirtuMart Project Brief.pdf](https://github.com/arzucaner/VirtuMart/files/11995629/VirtuMart.Project.Brief.pdf)
 
 ## Description
 VirtuMart is an e-commerce platform that allows users to browse and purchase professional graphic design templates. The website offers a diverse range of design options suitable for various industries. Users can easily customize the templates by editing texts, colors, and shapes, enabling them to create unique and impressive designs that reflect their brand's style and values.
