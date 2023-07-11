@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background: url('background.jpg') fixed;
+  background: url('image/background.jpg') fixed;
   background-size: 85%;
 }
 

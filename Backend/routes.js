@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/user.js');
-const Product = require('../models/product.js');
-const Cart = require('../models/cart.js');
-const Order = require('../models/order.js');
+const User = require('./models/user.js');
+const Product = require('./models/product.js');
+const Cart = require('./models/cart.js');
+const Order = require('./models/order.js');
 
 router.get('/', (req, res) => {
   res.json({ message: 'Here is API!' });
