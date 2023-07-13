@@ -39,6 +39,7 @@ VirtuMart is built using the following technologies:
 - Mongoose
 - HTML
 - CSS
+- Vue.js
 
 ## Installation
 To install VirtuMart locally, follow these steps:
