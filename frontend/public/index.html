@@ -1,17 +1,72 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtuMart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="app">
+    <h2>VirtuMart!</h2>
+    <div class="container">
+      <div class="menu">
+        <a class="menu-link" href="#">Home</a>
+        <a class="menu-link" href="#">About</a>
+        <a class="menu-link" href="#">Services</a>
+        <a class="menu-link" href="#">Contact</a>
+      </div>
+      <div class="title-wrapper">
+        <h1 class="title">Welcome to VirtuMart</h1>
+      </div>
+      <div class="content">
+        <h2>Discover Our Products</h2>
+        <p>Check out our amazing selection of products!</p>
+        <div class="products-container">
+          <div class="product">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+            <span>$19.99</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <span>$29.99</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <h3>Product 3</h3>
+            <p>Description of Product 3</p>
+            <span>$39.99</span>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="cart-container">
+          <div class="cart-item">
+            <h3>Cart Item 1</h3>
+            <p>Product: Product 1</p>
+            <span>$19.99</span>
+            <button>Remove</button>
+          </div>
+          <div class="cart-item">
+            <h3>Cart Item 2</h3>
+            <p>Product: Product 2</p>
+            <span>$29.99</span>
+            <button>Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2023 My Website. All rights reserved. | <a class="footer-link" href="#">Privacy Policy</a> | <a class="footer-link" href="#">Terms of Service</a></p>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
