@@ -185,7 +185,7 @@ h2 {
 .product h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
-  font-family: 'Unbounded', sans-serif; 
+  font-family: 'Unbounded', sans-serif;
 }
 
 .product p {
@@ -329,5 +329,23 @@ footer p {
   .cart-item {
     flex: 1 1 auto;
     margin-bottom: 20px;
+  }
+
+  .animate__animated {
+    animation-duration: 1s;
+  }
+
+  .animate__fadeIn {
+    animation-name: fadeIn;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 }
