@@ -1,0 +1,32 @@
+name: Node.js CI with MongoDB
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    services:
+      mongodb:
+        image: mongo
+        ports:
+          - 27017:27017
+        options: --name mongodb
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Run Tests
+      run: npm test
